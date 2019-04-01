@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Personal Website</title>
+		<link rel="icon" href="images/favico.jpg" type="image/jpeg"/>
+		<link type="text/css" rel="stylesheet" href="mainTheme.css"/>
+		<script type="text/javascript" src="jscript.js"></script>
+	</head>
+	<body>
+		<div id="tpmn">
+		</div>
+		<div id="lnk">
+			<center>
+				<a id="aboutLink" href="#About">ABOUT</a>
+				<a id="photoLink" href="#photo">PHOTO</a>
+				<a id="homeLink" href="#homeLink">HOME</a>
+				<a id="videoLink" href="#video">VIDEO</a>
+				<a id="contactLink" href="#contact">Contact</a>
+			</center>
+		</div>
+		<div id="home">
+		</div>
+		<h3 id="name">NAOL AREGA</h3>
+		<div id="namebg"></div>
+		<img id="me" src="images/me.png"/>
+		<div id="hbg">
+		</div>
+		<div id="homeArticle">
+			<center>
+				<p>
+					This is my website just made by me to help any body
+					to know about me and watch my photo and video.
+				</p>
+			</center>
+		</div>
+		<div id="About">
+			<h2 id="aboutTitle"></h2>
+			<center>
+			<h1 id="Hi">Hi!</h1>
+			<div id="aboutArticle">
+				<p>
+					my name is naol arega. i am a student at at addis ababa university school of information science.
+					i am specialized in building software and apps wesbsite development and other.
+					i write in many programming language in like c++, java, C#, assembly, python to name some. i also like
+					to work on 3d modeling and graphics design in my free time,
+				</p>
+			</div>
+			</center>
+		</div>
+		<div id="photo">
+			<h2 id="photoTitle"></h2>
+			<center>
+			<div id="photoSets">
+				<img id="prev" src="images/prev.jpg" onclick="imgswt('prev')"/>
+				<img id="previmg" title="prev" src="images/image1.jpg" />
+				<img id="imageView" title="main" src="images/image2.jpg"/>
+				<img id="nextimg" title="next" src="images/image3.jpg"/>
+				<img id="next" src="images/next.jpg" onclick="imgswt('next')"/>
+			</div>
+			</center>
+		</div>
+		<div id="video">
+			<h2 id="videoTitle"></h2>
+			<video id="mainVideo" controls>
+				<source src="videos/video5.mp4" type="video/mp4">
+			</video>
+			<div id="thumb">
+				<img id="th1" src="images/first.jpg"/>
+				<img id="th2" src="images/second.jpg"/>
+				<img id="th3" src="images/third.jpg"/>
+				<img id="th4" src="images/fourth.jpg"/>
+				<div id="playbtn">
+					<img src="images/play.png" onclick="play(1)"/>
+					<img src="images/play.png" onclick="play(2)"/>
+					<img src="images/play.png" onclick="play(3)"/>
+					<img src="images/play.png" onclick="play(4)"/>
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<h2 id="contactTitle"></h2>
+			<div>
+				<h1 id="write">Write me a comment</h1>
+				<textarea rows="10" cols="50" style="margin:10px 0px 0px 30%">
+				</textarea><br/>
+				<input type="text" value="enter your email" style="margin:10px 0px 0px 30%"/><br/>
+				<input type="text" value="nick name" style="margin:10px 0px 0px 30%"/><br/>
+				<input type="submit" name="send" style="margin:10px 0px 30px 30%"/>	
+				<div id="foot">
+					<div id="icons">
+						<h5 id="ft">Copyright &copy; 2019 Naol Arega All Rights Reserved</h5>
+						<img id="phn" src="images/phone.png" title="+251929298283"/>
+						<img id="fb" src="images/facebook.png" onclick="add('fb')"/>
+						<img id="twt" src="images/twitter.png" onclick="add('twt')"/>
+						<img id="ins" src="images/instagram.png" onclick="add('ins')"/>
+						<img id="yt" src="images/youtube.png" onclick="add('yt')"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
